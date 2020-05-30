@@ -8,3 +8,8 @@ export const dbConfig = {
   password: "P@ssw0rd",
   host: "MYSQL5012.site4now.net",
 };
+
+export const cryptConfig = {
+  algorithm: "aes-256-ctr",
+  password: "RJ23edrf",
+};

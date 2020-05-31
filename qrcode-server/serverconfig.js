@@ -10,6 +10,7 @@ export const dbConfig = {
 };
 
 export const cryptConfig = {
-  algorithm: "aes-256-ctr",
-  password: "RJ23edrf",
+  algorithm: "sha256",
+  key: "1234567891123456",
+  password: "aes-256-cbc",
 };

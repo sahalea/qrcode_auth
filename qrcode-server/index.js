@@ -4,7 +4,6 @@ import api from "./endpoints/index";
 import schema from "./data/schema";
 
 const app = express();
-const host = "127.0.0.1";
 const port = 3000;
 app.set("port", port);
 var server = require("http").createServer(app);

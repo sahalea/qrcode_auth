@@ -18,9 +18,16 @@ const registerUser = async (req, res) => {
         .json({ success: false, error: "Username Already Registered" });
     }
   } catch (error) {
-    return res.status(200).json({ success: false, error: error });
+    return res
+      .status(200)
+      .json({ success: false, error: "Something went wrong!" });
   }
 };
+
+/**
+ * Encrypt username using sha1 algorithm
+ * @param {*} text
+ */
 
 const setEncrypt = (text) => {
   let iv = new Buffer("0000000000000000");
@@ -32,6 +39,11 @@ const setEncrypt = (text) => {
   return cipher.update(text, "utf8", "hex") + cipher.final("hex");
 };
 
+/**
+ * validate existing username
+ * @param {*} model
+ * @param {*} username
+ */
 const validateEmail = async (model, username) => {
   const effectedRow = await model.findOne({
     where: {

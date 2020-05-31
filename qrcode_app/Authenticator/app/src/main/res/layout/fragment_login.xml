@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"
+        android:text="@string/bt_login" />
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_sign_up"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+
+</LinearLayout>

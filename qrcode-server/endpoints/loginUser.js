@@ -24,10 +24,16 @@ const loginUser = async (req, res) => {
         .json({ success: false, error: "Invalid Credential" });
     }
   } catch (error) {
-    return res.status(200).json({ success: false, error: error });
+    return res
+      .status(200)
+      .json({ success: false, error: "Invalid Credential" });
   }
 };
 
+/**
+ * Decrypt encrypted username
+ * @param {} text
+ */
 const decreptVal = (text) => {
   let iv = new Buffer("0000000000000000");
   var encodeKey = crypto

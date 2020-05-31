@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QR Authenticator</string>
+    <string name="status_success">Success</string>
+    <string name="status_failed">Failed</string>
+    <string name="bt_login">Login with QR code</string>
+    <string name="bt_sign_up">Sign Up</string>
+    <string name="password_hint">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_user_name">User name</string>
+
+    <string name="error_name">Invalid Name</string>
+    <string name="error_user_name">Invalid User Name</string>
+    <string name="error_password">Password should have at least 6 characters</string>
+    <string name="bt_download">Download</string>
+</resources>
